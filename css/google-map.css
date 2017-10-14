@@ -1,0 +1,64 @@
+/**
+* @subsection   GOOGLE MAP
+*
+* @description  Easy as hell Google Map Api Jquery plugin.
+*
+* @author       Evgeniy Gusarov (Diversant)
+**/
+.map {
+  position: relative;
+}
+.map address {
+  right: 20%;
+  bottom: 70px;
+  z-index: 99;
+  margin-top: 30px;
+  text-align: center;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: black;
+  font-weight: bolder;
+}
+@media (min-width: 768px) {
+  .map address {
+    position: absolute;
+    right: 20%;
+    bottom: 70px;
+    text-align: right;
+  }
+}
+@media (min-width: 1800px) {
+  .map address {
+    right: 218px;
+    bottom: 143px;
+  }
+}
+.map_model {
+  height: 400px;
+}
+.map_model img {
+  max-width: none !important;
+}
+@media (max-width: 991px) {
+  .map_model {
+    height: 650px;
+  }
+}
+@media (max-width: 767px) {
+  .map_model {
+    height: 450px;
+  }
+}
+@media (max-width: 479px) {
+  .map_model {
+    height: 350px;
+  }
+}
+.map .iw-content {
+  color: #0f1015;
+}
+.map_locations {
+  display: none;
+}

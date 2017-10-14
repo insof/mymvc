@@ -1,0 +1,38 @@
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-2 col-md-2">
+            <a href="tableview.php" target="_blank"><button class="btn-lg btn" style="color: white";>Редактирование</button></a>
+        </div>
+        <div class="col-xl-10 col-md-10">
+            <form style="float: right" id="inputform" action="additem.php" method=POST name="Добавление записи в БД">
+
+                <fieldset>
+                    <legend>Заполните ячейки и нажмите кнопку "Отправить", для очистки формы нажмите кнопку "Очистить".</legend></br>
+
+                    <p><input type="text" name="cat" placeholder="категория">  Текущие категории: <?php print $catarr; ?></br>
+
+                        <input type="text" required name="nameru" placeholder="русское название"></br>
+                        <input type="text" required name="namelat" placeholder="латинское название"></br>
+                        <input type="text" name="nameeng" placeholder="английское название"></br>
+                        <input type="text" name="nameit" placeholder="итальянское название"></br>
+                        <input type="text" name="namede" placeholder="немецкое название"></br>
+                        <input type="text" required name="packtype" placeholder="тип упаковки"></br>
+                        <input type="text" required name="packaging" placeholder="вес 1 упаковки"></br>
+                        <input type="text" required name="minorder" placeholder="минимальный заказ"></br>
+                        <input type="text" required name="tyype" placeholder="тип продукции">  Текущие типы: <?php print $tyypearr; ?></br> 
+                        <input type="text" name="len" placeholder="размер"></br>
+                        <input type="text" name="info" placeholder="доп. инфо"></br>
+
+
+                        </br><input class="btn-lg btn" type="submit" form="inputform" value="Отправить">
+
+                        <input class="btn-lg btn" type="reset" style="float: right;" value="Очистить">
+                    </p>
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+</div>
+<hr>
